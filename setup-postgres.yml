@@ -1,3 +1,12 @@
+- name: Remove nginx (when required)
+  hosts: all
+  tasks:
+    - name: Stop nginx when present
+      service:
+        name: nginx
+        state: stopped
+        enabled: false
+      ignore_errors: yes
 
 - name: Setup Postgresql
   hosts: all
