@@ -1,0 +1,12 @@
+
+
+postgresql_databases:
+  - name: demo
+    encoding: UTF-8
+    state: present
+    owner: demo
+
+postgresql_users:
+  - name: demo
+    password: demo
+    state: present
