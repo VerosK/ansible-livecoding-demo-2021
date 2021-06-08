@@ -1,4 +1,4 @@
-adminer_dir: /opt/adminer
+adminer_dir: /opt/adminer/
 
 adminer_source_url:
   https://github.com/vrana/adminer/releases/download/v{{ adminer_version }}/adminer-{{ adminer_version }}.php
