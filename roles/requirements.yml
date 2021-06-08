@@ -1,4 +1,7 @@
-
 roles:
   - name: geerlingguy.postgresql
     versioon: 3.1.0
+  - name: geerlingguy.apache
+    version: 3.1.4
+  - name: geerlingguy.php
+    version: 4.6.1
