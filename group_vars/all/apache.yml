@@ -1,0 +1,10 @@
+apache_vhosts:
+
+ - servername: "{{ ansible_fqdn }}"
+   documentroot: "/var/www/html"
+   extra_parameters: |
+      Alias /adminer/ {{ adminer_dir }}
+      <Directory "{{ adminer_dir }}">
+         DirectoryIndex index.php
+         Require all granted
+      </Directory>
