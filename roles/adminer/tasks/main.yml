@@ -1,0 +1,12 @@
+
+- name: Create adminer directory
+  file:
+    path: '{{ adminer_dir }}'
+    state: directory
+
+
+- name: Download Adminer source
+  get_url:
+    url: '{{ adminer_source_url }}'
+    dest: '{{ adminer_dir }}/index.php'
+    mode: 0444
